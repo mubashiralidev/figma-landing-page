@@ -907,3 +907,177 @@ body {
   color: #aaa;
   text-decoration: underline;
 }
+/*                 responsive                                     */
+/* ==========================================
+   MOBILE RESPONSIVE CODE (Copy this at the end)
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+    /* Global Spacing - Mobile par padding kam kardi */
+    .hero, .services, .cta-section, .case-studies-section, 
+    .process-section, .team, .testimonials-section, 
+    .contact-section, .footer {
+        padding: 40px 20px !important;
+        margin: 20px auto !important;
+    }
+
+    /* Navbar - Mobile par links hide kardiye ya stack kar sakte hain */
+    .navbar {
+        padding: 0 20px;
+    }
+    .nav-links, .quote-btn {
+        display: none; /* Mobile menu ke liye JS chahiye hogi, filhaal hide kiya hai */
+    }
+
+    /* Hero Section - Text center aur Button full width */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .hero-left {
+        max-width: 100%;
+    }
+    .hero-left h1 {
+        font-size: 32px;
+    }
+    .hero-btn {
+        width: 100%;
+    }
+
+    /* Brands - 2 ya 3 columns mein dikhane ke liye */
+    .brands-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    /* Services Section - Ek card ek line mein */
+    .services-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .badge-service {
+        font-size: 24px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack cards */
+    }
+    .service-card {
+        flex-direction: row; /* Image aur text sath rahein jese images mein hai */
+        padding: 20px;
+        min-height: auto;
+    }
+    .card-icon img {
+        width: 120px; /* Choti screen ke liye image size */
+        height: auto;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cta-content {
+        max-width: 100%;
+    }
+    .cta-btn {
+        width: 100%;
+    }
+    .cta-illustration img {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Case Studies - Horizontal ki bajaye vertical stack */
+    .case-card {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .case-item {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .divider {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 30px;
+    }
+
+    /* Working Process */
+    .process-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .process-top h3 {
+        font-size: 16px;
+    }
+
+    /* Team Section - Grid ko 1 column kardiya */
+    .team-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .team-btn {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Testimonials */
+    .bubble {
+        min-width: 100% !important;
+    }
+    .slider {
+        transform: translateX(0); /* Center items */
+    }
+
+    /* Contact Us - Form full width */
+    .contact-card {
+        padding: 30px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-illustration {
+        display: none; /* Mobile par illustration space leti hai */
+    }
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Footer - Sab cheezein center alignment mein */
+    .footer {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .footer-nav, .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .newsletter {
+        flex-direction: column;
+        width: 100%;
+    }
+    .newsletter input {
+        width: 100%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
