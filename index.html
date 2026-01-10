@@ -14,6 +14,7 @@
     <div class="logo">
         ★ <span>Positivus</span>
     </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul class="nav-links">
         <li><a href="#">,About us</a></li>
         <li><a href="#">Services</a></li>
@@ -23,6 +24,16 @@
     </ul>
     <button class="quote-btn">Request a quote</button>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Use Cases</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+</div>
+
 <!--                        HERO SECTION                -->
 <section class="hero">
     <div class="hero-left">
@@ -540,5 +551,10 @@
     <a href="#">Privacy Policy</a>
   </div>
 </footer>
+<script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
 </body>
 </html>

@@ -6,6 +6,7 @@
 }
 body {
     background-color: #ffffff;
+    padding-top: 72px;
 }
 /* Navbar */
 .navbar {
@@ -22,6 +23,44 @@ body {
     width: 100%;          
     z-index: 1000;
 }
+/* HAMBURGER BUTTON */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* MOBILE SLIDE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 72px;
+  left: -100%;
+  width: 240px;
+  height: calc(100vh - 72px);
+  background: #ffffff;
+  padding: 30px 20px;
+  transition: 0.3s ease;
+  z-index: 999;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* ACTIVE STATE */
+.mobile-menu.active {
+  left: 0;
+}
+
 /* Logo */
 .logo {
     font-size: 20px;
@@ -944,27 +983,29 @@ body {
 }
 
 @media (max-width: 768px) {
-
+  .nav-links,
+  .quote-btn {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
   .navbar {
     padding: 0 20px;
   }
-
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 120px 20px 60px;
   }
-
   .hero-left {
     max-width: 100%;
   }
-
   .brands-container {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
-
   .services-header,
   .case-header,
   .process-header,
@@ -974,35 +1015,40 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .team-grid {
     grid-template-columns: 1fr;
   }
-
   .contact-card {
     flex-direction: column;
     padding: 40px 24px;
   }
-
   .contact-form {
     width: 100%;
   }
-
   .footer {
     padding: 40px 24px;
   }
-
   .footer-content {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .newsletter {
     width: 100%;
     flex-direction: column;
   }
-
   .newsletter input {
     width: 100%;
+  }
+  .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .socials {
+    margin-top: 10px;
   }
 }
