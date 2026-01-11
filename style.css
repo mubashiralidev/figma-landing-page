@@ -1081,24 +1081,26 @@ body {
         padding:40px 20px;
     }
     .service-card {
-    padding: 20px;       
+    padding: 16px;       
     min-height: auto;
-    gap: 16px;
+    gap: 14px;
+  border-radius:22px;    
   }
   .card-text h3 {
-    font-size: 20px;        
+    font-size: 17px;        
     margin-bottom: 14px;
+      line-height:1.25;
   }
   .learn-more {
-    font-size: 14px;
-  }
-  .learn-more .arrow {
-    width: 22px;
-    height: 22px;
     font-size: 12px;
   }
+  .learn-more .arrow {
+    width: 19px;
+    height: 19px;
+    font-size: 11px;
+  }
   .card-icon img {
-    width: 120px;           
+    width: 100px;           
     height: auto;
   }
   .services-header,
