@@ -1074,6 +1074,18 @@ body {
     gap: 20px;
     justify-content: center;
   }
+    .services-header{
+        gap:20px;
+    }
+    .services{
+        padding:40px 20px;
+    }
+    .service-card{
+        width:100%;
+        box-sizing:border-box;
+        border-radius:30px;
+        padding:30px;
+    }
   .services-header,
   .case-header,
   .process-header,
