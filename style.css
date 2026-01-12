@@ -970,13 +970,13 @@ body {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .case-card {
+  /* .case-card {
     flex-direction: column;
     gap: 30px;
   }
   .divider {
     display: none;
-  }
+  } */
   .slider {
     transform: none;
     overflow-x: auto;
@@ -1128,4 +1128,14 @@ body {
 html, body {
   overflow-x: hidden;
 }
+@media (max-width: 1024px) and (hover: none) {
+  .case-card {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .divider {
+    display: none;
+  }
+}
+
 
