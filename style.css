@@ -1074,6 +1074,35 @@ body {
     gap: 20px;
     justify-content: center;
   }
+    .services-header{
+        gap:20px;
+    }
+    .services{
+        padding:40px 20px;
+    }
+    .service-card {
+    padding: 16px;       
+    min-height: auto;
+    gap: 14px;
+  border-radius:22px;    
+  }
+  .card-text h3 {
+    font-size: 17px;        
+    margin-bottom: 14px;
+      line-height:1.25;
+  }
+  .learn-more {
+    font-size: 12px;
+  }
+  .learn-more .arrow {
+    width: 19px;
+    height: 19px;
+    font-size: 11px;
+  }
+  .card-icon img {
+    width: 100px;           
+    height: auto;
+  }
   .services-header,
   .case-header,
   .process-header,
